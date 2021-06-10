@@ -199,9 +199,9 @@ int main (int argc, char *argv[]) {
         << spectrum._charge << "\t" 
         << top_matches[i] << "\t" 
         << top_scores[i] << "\t" 
-        << top_raw_peptides[i] << "\t"
-        << endl;
+        << top_raw_peptides[i] << "\t\n";
   }
+  writer << endl;
   writer.close();
 
 

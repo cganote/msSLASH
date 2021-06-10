@@ -258,8 +258,9 @@ double Commons::AnalyzeBucketSizeFreqDist(
   ofstream writer(path);
   writer << "key,target,decoy" << endl;
   for (const auto& kv : um_table) {
-    writer << kv.first << "," << kv.second.first << "," << kv.second.second << endl; 
+    writer << kv.first << "," << kv.second.first << "," << kv.second.second << "\n"; 
   }
+  writer << endl;
   writer.close();
   return timer.stop();
 }
@@ -290,8 +291,9 @@ double Commons::AnalyzeBucketSizeFreqDistSubsampledSpace(
   ofstream writer(path);
   writer << "key,target,decoy" << endl;
   for (const auto& kv : um_table) {
-    writer << kv.first << "," << kv.second.first << "," << kv.second.second << endl; 
+    writer << kv.first << "," << kv.second.first << "," << kv.second.second << "\n"; 
   }
+  writer << endl;
   writer.close();
   return timer.stop();
 }
